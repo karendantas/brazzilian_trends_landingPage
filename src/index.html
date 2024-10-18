@@ -2,38 +2,41 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Brazzilian Trends</title>
   </head>
   <body>
     <header>
-          <div>
-            <span>BRAZZILIAN TRENDS</span>
+      <div class = "header-content">
+          <div class = "upper-content">
+            <h1>BrazzilinTrends</h1>
             <!-- Barra de pesquisa -->
-            <div>
+            <div class = "search-input">
               <input type="text" placeholder="o que deseja procurar?">
-              <span>icone</span>
+              <img src="assets/svg/magnifier.svg" alt="icone de lupa"/>
             </div>
             <!-- informações da conta -->
-            <div>
-                <span>icone</span>
+            <div class = "account-info">
+              <div class = "account-init">
+                <img src="assets/svg/enter.svg" alt="icone de porta indicanto entrada na conta"/>
                 <div>
-                  <span>minha Conta</span>
-                  <span>Entrar cadastrar</span>
+                  <span class = "blue-text">minha Conta</span>
+                  <span class="beige-text">entrar cadastrar</span>
                 </div>
+              </div>
 
-                <div>
-                  <span>icone carrinho</span>
-                  <span>icone items</span>
-                </div>
+              <div class = "account-cart">
+                <img src="assets/svg/cart.svg" alt="icone de carrinho de compras"/>
+                <div class = "cart-quantity">0</div>
+              </div>
             </div>
             
           </div>
-          <hr>
+          <div class="divider"></div>
           
           <!-- Categorias -->
-           <div>
+           <div class = "header-categories">
             <ul>
               <li>casacos</li>
               <li>Body</li>
@@ -47,6 +50,7 @@
               <li>Acessórios</li>
             </ul>
            </div>
+      </div>
     </header>
     <main>
      

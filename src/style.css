@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/quilin');
+
+:root {
+  --header-color:#FFFDF0;
+  --red-900: #BE2233;
+  --red-400: #F4D9D2;
+  --beige-500: #CC876A;
+  --blue-600: #346D9E;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quilin', sans-serif;
+}
+
+header{
+  background-color: var(--header-color) ;
+  height: 10rem;
+}
+
+.header-content{
+  width: 100%;
+  max-width: 1244px;
+  height: 100vh;
+  margin: 0 auto;
+
+  padding-top: 2.5rem;
+}
+
+.upper-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upper-content > h1 {
+  font-size: 2.25rem;
+  color: var(--red-900);
+  font-weight: 400;
+  margin-left: 2.9375rem;
+}
+.search-input {
+  background-color: var(--red-400);
+  border-radius: 5px;
+  padding-inline: 1.875rem;
+
+  width: 31.25rem;
+  height: 2.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-input input {
+  background: transparent;
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.search-input input::placeholder{
+  color: var(--beige-500);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/*informações da conta*/
+.account-info{
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  font-size: 15px;
+}
+.account-init{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.account-init > div {
+  display: flex;
+  flex-direction: column;
+}
+.account-cart{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.account-cart > div {
+  background-color: var(--beige-500);
+  padding: 4px 8px;
+  color: #FFFDF0;
+  border-radius: 999px;
+}
+
+.divider {
+  margin-top: 24px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: var(--red-400);
+}
+
+main {
+  width: 100%;
+  max-width: 1244px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.blue-text{
+  color: var(--blue-600);
+}
+.beige-text {
+  color: var(--beige-500);
+}
