@@ -29,7 +29,6 @@ header{
 .header-content{
   width: 100%;
   max-width: 1120px;
-  height: 100vh;
   margin: 0 auto;
 
   padding-top: 2.5rem;
@@ -70,6 +69,7 @@ header{
   color: var(--beige-500);
   font-size: 24px;
   font-weight: 400;
+  
 }
 
 .search-input input::placeholder{
@@ -78,6 +78,8 @@ header{
   font-weight: 400;
   position: absolute;
   top: 30%;
+
+  
   
 }
 /*informações da conta*/
@@ -104,9 +106,10 @@ header{
 }
 .account-cart > div {
   background-color: var(--beige-500);
-  padding: 4px 8px;
+  padding: 3px 8px;
   color: #FFFDF0;
   border-radius: 999px;
+  font-size: 15px;
   font-family: 'Postre';
 }
 
@@ -139,8 +142,9 @@ header{
 .releases-section{
   width: 100%;
   max-width: 1244px;
-  height: 100vh;
   margin: 0 auto;
+
+
 }
 .releases-section > h2 {
   font-size: 2.25rem;
@@ -196,6 +200,49 @@ header{
   font-family: 'Postre';
 }
 
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+}
+
+/*sessão de categorias*/
+.category-section{
+  width: 100%;
+  max-width: 1244px;
+  margin: 0 auto;
+  padding-top: 4.625rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/*sessão de promoções */
+.sale-section{
+  width: 100%;
+  max-width: 1244px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 60px;
+}
+
+.sale-section h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+
+.sales-container {
+  display: flex;
+  gap: 12px;
+}
 .blue-text{
   color: var(--blue-600);
 }
