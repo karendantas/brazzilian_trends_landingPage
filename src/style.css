@@ -1,5 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/quilin');
-
+@font-face {
+  font-family: 'Postre';
+  src: url('/demo-postre.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --header-color:#FFFDF0;
   --red-900: #BE2233;
@@ -16,12 +21,13 @@
 
 header{
   background-color: var(--header-color) ;
-  height: 10rem;
+  height: 11.1875rem;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
 }
 
 .header-content{
   width: 100%;
-  max-width: 1244px;
+  max-width: 1120px;
   height: 100vh;
   margin: 0 auto;
 
@@ -51,6 +57,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .search-input input {
   background: transparent;
@@ -58,21 +65,27 @@ header{
   width: 90%;
   outline: none;
   border: none;
-  display: flex;
-  align-items: center;
+
+  color: var(--beige-500);
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .search-input input::placeholder{
   color: var(--beige-500);
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: 400;
+  position: absolute;
+  top: 30%;
+  
 }
 /*informações da conta*/
 .account-info{
   display: flex;
   align-items: center;
   gap: 1.7rem;
-  font-size: 15px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .account-init{
   display: flex;
@@ -93,6 +106,7 @@ header{
   padding: 4px 8px;
   color: #FFFDF0;
   border-radius: 999px;
+  font-family: 'Postre';
 }
 
 .divider {
@@ -100,6 +114,18 @@ header{
   height: 2px;
   border-radius: 8px;
   background-color: var(--red-400);
+}
+
+/*categorias*/
+
+.header-categories > ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.2rem;
+  color: var(--blue-600);
+  list-style: none;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
 }
 
 main {
