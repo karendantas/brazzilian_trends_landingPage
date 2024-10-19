@@ -11,13 +11,17 @@
   --red-400: #F4D9D2;
   --beige-500: #CC876A;
   --blue-600: #346D9E;
+  --blue-700: #2668A2;
   --gray-200: #DEDEDE;
+  --dark-yellow: #CCAD6E;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Quilin', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 header{
@@ -26,7 +30,7 @@ header{
   filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
 }
 
-.header-content{
+.header-container{
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
@@ -78,9 +82,6 @@ header{
   font-weight: 400;
   position: absolute;
   top: 30%;
-
-  
-  
 }
 /*informações da conta*/
 .account-info{
@@ -114,6 +115,7 @@ header{
 }
 
 .divider {
+  width: 100%;
   margin-top: 24px;
   height: 2px;
   border-radius: 8px;
@@ -134,16 +136,20 @@ header{
 
 /*home */
 .carrossel-img {
- background-color:#F08AA0;
  width: 100%;
- height: 385px;
+ display: flex;
+ justify-content: center;
+  height: 390px;
+ background-image: url('./assets/img/home-img.png');
+ background-repeat: no-repeat;
+ background-position: center;
 }
+
 
 .releases-section{
   width: 100%;
-  max-width: 1244px;
+  max-width: 1120px;
   margin: 0 auto;
-
 
 }
 .releases-section > h2 {
@@ -162,6 +168,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+
   
 }
 .card > .release-tag {
@@ -211,7 +218,7 @@ header{
 /*sessão de categorias*/
 .category-section{
   width: 100%;
-  max-width: 1244px;
+  max-width: 1120px;
   margin: 0 auto;
   padding-top: 4.625rem;
 
@@ -223,7 +230,7 @@ header{
 /*sessão de promoções */
 .sale-section{
   width: 100%;
-  max-width: 1244px;
+  max-width: 1120px;
   margin: 0 auto;
 
   display: flex;
@@ -243,6 +250,128 @@ header{
   display: flex;
   gap: 12px;
 }
+
+/* footer */
+footer {
+  background-color: var(--blue-700);
+  min-height: 500px;
+}
+.footer-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer-upper-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.footer-info > h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFDF0;
+}
+
+.footer-info > span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #CCAD6E;
+}
+
+.sigin-up-email{
+  display: flex;
+  align-items: center;
+}
+.sigin-up-email input {
+  width: 503px;
+  border-radius: 5px;
+  background-color: var(--red-400);
+  height: 44px;
+  outline: none;
+  border: none;
+  margin-right: -5px;
+  padding-left: 21px;
+  color: var(--dark-yellow);
+  font-size: 1rem;
+}
+
+.sigin-up-email input::placeholder {
+  color: var(--dark-yellow);
+  font-size: 1rem;
+
+}
+.sigin-up-email button {
+  background-color: var(--beige-500);
+  border: none;
+  outline: none;
+  border: none;
+  width: 159px;
+  height: 44px;
+  color: #FFFDF0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.footer-lower-content{
+  width: 100%;
+  padding-top: 64px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.logo-text{
+  color: #FFFDF0;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.social-medias > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
+.footer-h3 {
+  color: #FFFDF0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.services > ul >li {
+  padding-bottom: 3px;
+}
+.services ul li a{
+  color: var(--dark-yellow);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.services-2 ul li a{
+  color: var(--dark-yellow);
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 5px;
+}
+.payment-options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .blue-text{
   color: var(--blue-600);
 }

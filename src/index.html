@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class = "header-content">
+      <div class = "header-container">
           <div class = "upper-content">
             <h1>BrazilianTrends</h1>
             <!-- Barra de pesquisa -->
@@ -55,9 +55,8 @@
     <main>
      
         <!--Carrossel de imagem-->
-        <div class="carrossel-img">
-          <img src="" alt=""/>
-        </div>        
+        <div class="carrossel-img"></div> 
+               
         <!-- Sessão de lançamentos-->
         <section class = "releases-section">
           <h2 class="beige-text">lançamentos</h2>
@@ -78,65 +77,9 @@
               </div>
             </div>
           </div>
-
-          <div class="card">
-            <img src="./assets/img/blusa-denim.png" alt=""/>
-            <div class = "release-tag">lançamento</div>
-            
-            <div class = "product-highlight">
-              <h3 class="beige-text">Blusa demin turbo</h3>
-              <!--Precificação-->
-              <div>
-                <span class="blue-text price">R$ 49,99</span>
-                <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./assets/img/blusa-denim.png" alt=""/>
-            <div class = "release-tag">lançamento</div>
-            
-            <div class = "product-highlight">
-              <h3 class="beige-text">Blusa demin turbo</h3>
-              <!--Precificação-->
-              <div>
-                <span class="blue-text price">R$ 49,99</span>
-                <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./assets/img/blusa-denim.png" alt=""/>
-            <div class = "release-tag">lançamento</div>
-            
-            <div class = "product-highlight">
-              <h3 class="beige-text">Blusa demin turbo</h3>
-              <!--Precificação-->
-              <div>
-                <span class="blue-text price">R$ 49,99</span>
-                <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./assets/img/blusa-denim.png" alt=""/>
-            <div class = "release-tag">lançamento</div>
-            
-            <div class = "product-highlight">
-              <h3 class="beige-text">Blusa demin turbo</h3>
-              <!--Precificação-->
-              <div>
-                <span class="blue-text price">R$ 49,99</span>
-                <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-              </div>
-            </div>
-          </div>
         </div>
-        </section>
 
+      </section>
         <!--sessão de categorias-->
         <div class = "category-section">
           <img src="./assets/img/acessorios.png" alt=""/>
@@ -164,43 +107,70 @@
               </div>
 
             </div>
-
-            <div class="card">
-              <img src="./assets/img/calça.png" alt=""/>
-              <div class = "release-tag">promoção</div>
-              
-              <div class = "product-highlight">
-                <h3 class="beige-text">Calça flor</h3>
-
-                <!--Precificação-->
-                <div>
-                  <span class="blue-text">R$ 49,99</span>
-                  <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card">
-              <img src="./assets/img/calça.png" alt=""/>
-              <div class = "release-tag">promoção</div>
-              
-              <div class = "product-highlight">
-                <h3 class="beige-text">Calça flor</h3>
-
-                <!--Precificação-->
-                <div>
-                  <span class="blue-text">R$ 49,99</span>
-                  <span class="blue-text">R$ 49.99 à vista com desconto pix</span>
-                </div>
-              </div>
-
-            </div>
+  
         </div>
         </section>
     </main>
+
     <footer>
-      
+        <div class = "footer-container">
+            <div class = "footer-upper-content">
+              <div class = "footer-info">
+                <h3>Cadastre-se em nossa newsletter</h3>
+                <span>e receba novidades e promoções</span>
+              </div>
+
+              <div class = "sigin-up-email">
+                <input type="text" placeholder="digite seu e-mail">
+                <button>cadastre-se <img src="./assets/svg/arrow-right.svg" alt=""> </button>
+              </div>
+            </div>
+
+            <div class= "divider"></div>
+
+            <div class = "footer-lower-content">
+              <div class = "social-medias">
+                  <h2 class = "logo-text">BrazilianTrends</h2>
+                  <ul>
+             
+                    <li><a href="#"><img src="./assets/svg/facebook.svg" alt="ícone do facebook"></a></li>
+                    <li><a href="#"><img src="./assets/svg/instagram.svg" alt="ícone do instagram"></a></li>
+                    <li><a href="#"><img src="./assets/svg/twitter.svg" alt="ícone do twitter"></a></li>
+                    <li><a href="#"><img src="./assets/svg/linkedin.svg" alt="ícone do linkedin"></a></li>
+                    <li><a href="#"><img src="./assets/svg/pinterest.svg" alt="ícone do pinterest"></a></li>
+                  </ul>
+              </div>
+
+              <div class = "services">
+                  <h3 class = "footer-h3">Institucional</h3>
+                  <ul>
+                    <li><a href="#">Sobre a Brazilian Trends </a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Envio</a></li>
+                    <li><a href="#">Pagamento</a></li>
+                    <li><a href="#">Troca e Devouções</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                  </ul>
+
+              </div>
+
+              <div class = "services-2">
+                <h3 class = "footer-h3">Atendimento</h3>
+                <ul>
+                  <li> <img src="./assets/svg/fone.svg" alt="ícone de telefone"/> <a href="#">  (81) 9 9999-9999  </a></li>
+                  <li> <img src="./assets/svg/email.svg" alt="ícone de carta"/><a href="#">loja@Braziliantrends.com</a></li>
+                </ul>
+              </div>
+
+              <div class = "payment-options">
+                  <h3 class = "footer-h3">Formas de pagamento</h3>
+                  <img src="./assets/img/pagamento.png" alt="">
+              </div>
+
+            </div>
+            <h2 class = "logo-text">BrazilianTrends</h2>
+        </div>
     </footer>
 
     <script type="module" src="/main.js"></script>
