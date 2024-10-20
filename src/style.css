@@ -189,7 +189,6 @@ header{
   padding: 20px 15px;
 }
 .product-highlight > h3{
-  padding-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -201,12 +200,25 @@ header{
 
 }
 .price {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 10px;
   font-family: 'Postre';
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+ 
+}
+.alt-price {
+  font-family: 'Postre';
+  font-weight: 600;
 }
 
+/*Estilos em caso de produto sem estoque*/
+.out-stock {
+  align-items: center !important;
+  justify-content: center !important;
+}
+.out-stock > .price {
+  margin-bottom: 0 !important;
+}
 .products-container {
   display: flex;
   justify-content: center;
