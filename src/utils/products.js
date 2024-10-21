@@ -57,3 +57,34 @@ export const products = [
     }
 ]
 
+export const sales_products = [
+    {
+        id: 1,
+        title: 'Calça flor laços',
+        price: 79.99,
+        image: './assets/img/calça.png',
+        stock: true
+    },
+    {
+        id: 2,
+        title: 'Blusa top laços',
+        price: 59.99,
+        image: './assets/img/blusa-top-lacos.png',
+        stock: true
+    },
+    {
+        id: 3,
+        title: 'Vestido rodado lumin',
+        price: 69.99,
+        image: './assets/img/vestido-lumin.png',
+        stock: true
+    },
+    {
+        id: 4,
+        title: 'Blusa top lumin',
+        price: 49.99,
+        image: './assets/img/blusa-lumin.png',
+        stock: true
+    }
+
+]
