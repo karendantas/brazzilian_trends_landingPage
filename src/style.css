@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 :root {
   --header-color:#FFFDF0;
   --red-900: #BE2233;
@@ -34,7 +35,6 @@ header{
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-
   padding-top: 2.5rem;
 }
 
@@ -71,14 +71,14 @@ header{
   border: none;
 
   color: var(--beige-500);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   
 }
 
 .search-input input::placeholder{
   color: var(--beige-500);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   position: absolute;
   top: 30%;
@@ -116,7 +116,7 @@ header{
 
 .divider {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 1.5rem;
   height: 2px;
   border-radius: 8px;
   background-color: var(--red-400);
@@ -136,13 +136,13 @@ header{
 
 /*home */
 .carrossel-img {
- width: 100%;
- display: flex;
- justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: 390px;
- background-image: url('./assets/img/home-img.png');
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url('./assets/img/home-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -156,12 +156,13 @@ header{
   font-size: 2.25rem;
   font-weight: 400;
   text-align: center;
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 /*cads dos produtos */
 .card{
   width: 15.1875rem;
+  height: 24.1875rem;
   border-radius: 5px;
   border: 2px solid var(--gray-200);
 
@@ -185,8 +186,16 @@ header{
   margin-top: -12px;
 
 }
+.card > img {
+  height: 14.8125rem ;
+ 
+}
 .card > .product-highlight {
-  padding: 20px 15px;
+  height: 150px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .product-highlight > h3{
   font-size: 1.5rem;
@@ -236,7 +245,13 @@ header{
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.25rem;
+}
+
+.category-section > img {
+  width: 30.875rem;
+  height: 25.875rem;
 }
 
 /*sessão de promoções */
@@ -248,8 +263,8 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 60px;
+  padding-top: 1.0625rem;
+  padding-bottom: 3.75rem;
 }
 
 .sale-section h2 {
@@ -260,6 +275,8 @@ header{
 
 .sales-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -277,6 +294,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-inline: 10px ;
   
 }
 
@@ -285,10 +303,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 55px;
+  flex-wrap: wrap;
+  padding-top: 3.4375rem;
 }
 .footer-info > h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #FFFDF0;
 }
@@ -296,7 +315,7 @@ footer {
 .footer-info > span {
   font-size: 1rem;
   font-weight: 500;
-  color: #CCAD6E;
+  color: var(--dark-yellow)
 }
 
 .sigin-up-email{
@@ -304,7 +323,7 @@ footer {
   align-items: center;
 }
 .sigin-up-email input {
-  width: 503px;
+  width: 31.4375rem;
   border-radius: 5px;
   background-color: var(--red-400);
   height: 44px;
@@ -326,7 +345,7 @@ footer {
   border: none;
   outline: none;
   border: none;
-  width: 159px;
+  width: 9.9375rem;
   height: 44px;
   color: #FFFDF0;
   font-size: 1rem;
@@ -343,6 +362,7 @@ footer {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo-text{
   color: #FFFDF0;
@@ -382,11 +402,19 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
-
+.payment-options > img {
+  width: 18.125rem;
+  height: 11.8125rem;
+}
 .blue-text{
   color: var(--blue-600);
 }
 .beige-text {
   color: var(--beige-500);
+}
+
+@media (max-width: 1000px){
+  html {
+    font-size: 70%;
+  }
 }
